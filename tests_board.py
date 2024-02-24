@@ -83,3 +83,7 @@ class TestBoard(unittest.TestCase):
         actual = board.check_for_win()
         expected = False
         self.assertEqual(actual, expected)
+
+
+if __name__ == "__main__":
+    unittest.main(exit=False)
