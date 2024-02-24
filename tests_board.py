@@ -79,7 +79,7 @@ class TestBoard(unittest.TestCase):
     def test_check_for_win_example_10(self):
         """ cats - no remaining valid positions. game ends """
         board = Board(player_x='playerX', player_o='playerO')
-        board.valid_positions = []
+        board.valid_positions = set()
         actual = board.check_for_win()
         expected = False
         self.assertEqual(actual, expected)

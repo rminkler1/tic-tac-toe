@@ -2,7 +2,7 @@
 class Board:
     def __init__(self, player_x, player_o, curr_player="X"):
         self.board = [['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']]
-        self.valid_positions = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+        self.valid_positions = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'}
         self.curr_player = curr_player
         self.player_x_name = player_x
         self.player_o_name = player_o
