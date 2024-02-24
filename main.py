@@ -14,7 +14,7 @@ while board.game_on:
 
     # continue once the player has input a valid square
     while player_choice is None:
-        board.show()
+        board.draw()
         player_choice = board.prompt_player()
 
     board.update(player_choice)

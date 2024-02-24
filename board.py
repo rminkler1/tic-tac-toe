@@ -10,7 +10,7 @@ class Board:
         self.winner = ''
 
     # Display board
-    def show(self):
+    def draw(self):
         for row in self.board:
             print(f"|{row[0]}|{row[1]}|{row[2]}|")
 
@@ -77,7 +77,7 @@ class Board:
 
     def end(self):
         # end of game message
-        self.show()
+        self.draw()
         if self.winner == "X":
             name = self.player_x_name
         else:

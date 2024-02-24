@@ -61,7 +61,7 @@ class TestBoard(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_check_for_win_example_08(self):
-        """ dig 1 win. game ends """
+        """ diag 1 win. game ends """
         board = Board(player_x='playerX', player_o='playerO')
         board.board = [['X', 'B', 'C'], ['D', 'X', 'F'], ['G', 'H', 'X']]
         actual = board.check_for_win()
